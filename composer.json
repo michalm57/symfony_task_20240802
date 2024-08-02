@@ -11,15 +11,21 @@
         "doctrine/doctrine-bundle": "^2.12",
         "doctrine/doctrine-migrations-bundle": "^3.3",
         "doctrine/orm": "^3.2",
+        "symfony/asset": "6.4.*",
         "symfony/console": "6.4.*",
         "symfony/dotenv": "6.4.*",
         "symfony/flex": "^2",
+        "symfony/form": "6.4.*",
         "symfony/framework-bundle": "6.4.*",
+        "symfony/monolog-bundle": "*",
         "symfony/runtime": "6.4.*",
+        "symfony/security-csrf": "6.4.*",
         "symfony/twig-bundle": "6.4.*",
         "symfony/yaml": "6.4.*"
     },
     "require-dev": {
+        "doctrine/doctrine-fixtures-bundle": "^3.6",
+        "fakerphp/faker": "^1.23",
         "symfony/maker-bundle": "^1.60"
     },
     "config": {

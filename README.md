@@ -60,6 +60,6 @@ pgAdmin, a web-based PostgreSQL administration tool, is available at http://loca
 Use the following credentials to log in:
 
 ```
-Email: your_email@example.com
-Password: your_password
+Email: pgadmin@mail.com
+Password: pgadmin_password
 ```

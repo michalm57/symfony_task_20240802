@@ -28,8 +28,8 @@ This README provides instructions on how to set up and run a Symfony project usi
 
 ## Installation Steps
 * Clone the repository and navigate to the project directory:
-* git clone git@github.com:michalm57/symfony_crud.git
-* cd symfony_crud
+* git clone git@github.com:michalm57/symfony_task_20240802.git
+* cd symfony_task_20240802
 * In the project root directory, create a new .env file with the following contents:
 ```
 APP_ENV=dev
@@ -43,15 +43,15 @@ Run the following command to build and start the Docker containers:
 docker-compose up -d --build
 ```
 ##  Access the application:
-The Symfony application should now be running. Access it in your web browser at http://localhost. 
+The Symfony application should now be running. Access it in your web browser at http://localhost/books. 
 
 ##  Database Access
 The PostgreSQL database is accessible through the database container. You can connect to it using your preferred PostgreSQL client with the following credentials:
 ```
 Host: localhost
 Port: 5432
-Database Name: symfony_crud
-Username: symfony_crud
+Database Name: symfony_task
+Username: symfony_task
 Password: password
 ```
 

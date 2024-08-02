@@ -4,18 +4,13 @@ RUN chown -R www-data:www-data /var/www/html
 
 RUN apt-get update \
     && apt-get install -y --no-install-recommends \
-    libpq-dev \
-    libzip-dev \
+        libpq-dev \
+        libzip-dev \
+        postgresql-client \
+        libonig-dev \
     && rm -rf /var/lib/apt/lists/*
 
-RUN docker-php-ext-install pdo pdo_pgsql mysqli
-
-RUN apt-get update \
-    && apt-get install -y --no-install-recommends \
-    libonig-dev \
-    && docker-php-ext-install mbstring
-
-RUN docker-php-ext-install zip
+RUN docker-php-ext-install pdo pdo_pgsql mysqli mbstring zip
 
 RUN a2enmod rewrite
 
@@ -27,4 +22,5 @@ RUN chown -R www-data:www-data /var/www/html
 
 EXPOSE 80
 
+ENTRYPOINT ["docker-php-entrypoint"]
 CMD ["apache2-foreground"]

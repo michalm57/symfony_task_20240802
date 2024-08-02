@@ -10,6 +10,22 @@ This README provides instructions on how to set up and run a Symfony project usi
 * PostgreSQL database
 * pgAdmin
 
+## Used Libraries
+* symfony/framework-bundle
+* symfony/console
+* symfony/dotenv
+* symfony/maker-bundle
+* symfony/orm-pack
+* symfony/yaml
+* doctrine/orm
+* doctrine/doctrine-bundle
+* doctrine/dbal
+* fakerphp/faker
+* symfony/var-dumper
+* twig/twig
+* alice/alice
+* symfony/asset
+
 ## Installation Steps
 * Clone the repository and navigate to the project directory:
 * git clone git@github.com:michalm57/symfony_crud.git

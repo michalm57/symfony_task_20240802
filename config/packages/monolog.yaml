@@ -1,0 +1,12 @@
+monolog:
+    channels: ['book']
+    handlers:
+        main:
+            type: stream
+            path: "%kernel.logs_dir%/%kernel.environment%.log"
+            level: info
+        book_log:
+            type: stream
+            path: "%kernel.logs_dir%/book.log"
+            level: info
+            channels: ['book']
